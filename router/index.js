@@ -1,6 +1,10 @@
 module.exports=function(app){
     require('./file_system')(app);
     require("./employee")(app);
-    require('../src/mongo_db')
+    require('./mongo_db')(app);
+    require('./jwt')(app);
+    require('./event_emitter')(app);
+    require('./joi_validator')(app);
+    
   
   }
